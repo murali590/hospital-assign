@@ -3,6 +3,32 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 9px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 250px;
@@ -77,40 +103,56 @@ button:hover, a:hover {
 
    
     <div class="content">
-        <h2 style="text-align:center">Some of our best doctors </h2>
+        <h2 style="text-align:center">Some of our best Neurologist </h2>
     
         <div class="grid-container">
             <div class="card">
                 <img src="g.png" alt="Dr.Kevin" style="width:75%">
                 <h1>Dr.Kevin</h1>
-                <p class="title">Neurosurgeon</p>
+                <p class="title">Neurologist</p>
                 <p>Harvard University</p>
-        
-                <p><button>Contact</button></p>
+                <div class="tooltip"><button>Contact</button>
+                    <span class="tooltiptext"> 
+                      Phone:123456<br>
+                      Email:xyz@gmail.com
+                    </span>
+                  </div>
             </div>
             <div class="card">
                 <img src="g.png" alt="Dr.John" style="width:75%">
                 <h1>Dr.John</h1>
-                <p class="title">Cardiologist</p>
+                <p class="title">Neurologist</p>
                 <p>Harvard University</p>
-          
-                <p><button>Contact</button></p>
+                <div class="tooltip"><button>Contact</button>
+                    <span class="tooltiptext"> 
+                      Phone:123456<br>
+                      Email:xyz@gmail.com
+                    </span>
+                  </div>
             </div>
             <div class="card">
                 <img src="g.png" alt="Dr.Mark" style="width:75%">
                 <h1>Dr.Mark</h1>
-                <p class="title">Pediatrician</p>
+                <p class="title">Neurologist</p>
                 <p>Harvard University</p>
-          
-                <p><button>Contact</button></p>
+                <div class="tooltip"><button>Contact</button>
+                    <span class="tooltiptext"> 
+                      Phone:123456<br>
+                      Email:xyz@gmail.com
+                    </span>
+                  </div>
             </div>
             <div class="card">
                 <img src="g.png" alt="Dr.George" style="width:75%">
                 <h1>Dr.George</h1>
-                <p class="title">Consultant Orthopedics</p>
+                <p class="title">Neurologist</p>
                 <p>Harvard University</p>
-          
-                <p><button>Contact</button></p>
+                <div class="tooltip"><button>Contact</button>
+                    <span class="tooltiptext"> 
+                      Phone:123456<br>
+                      Email:xyz@gmail.com
+                    </span>
+                  </div>
             </div>
             
 

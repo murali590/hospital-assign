@@ -1,5 +1,10 @@
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
 body {margin:20px;
 background:#fefbd8
@@ -27,7 +32,7 @@ position:absolute;
 
 }
 div.container {
-  text-align: center;
+  text-align: right;
 
   padding: 10px 60px;
 
@@ -58,9 +63,20 @@ font-size:22px;
 <div class="b">
 HealthCare Hospitals
 </div>
-<div class="a">
-<a href="D:\htmlsam\html_sample\hospital-assign\specialization.html" target="_blank">Specialization</a>&emsp;&emsp;
-<a href="D:\htmlsam\html_sample\hospital-assign\bookcancel.html" target="_blank">Appointment</a>&emsp;
+<div class="container">  
+<a href="specialization.html" target="_blank">Specialization</a>
+<div class="container">                                
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Appointment
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="Login.html">Book Appointment</a>
+      <a class="dropdown-item" href="login1.html">Cancel Appointment</a>
+      
+    </div>
+  </div>
+</div>
 </div>
 </nav>
 <br><br><br>
